@@ -1,0 +1,97 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Marker Felt, fantasy;
+}
+
+body {
+   background-image: url("../images/background_bumps_light.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/*--- header title ---*/
+#title {
+   text-align: center;
+   padding: 20px;
+   width: 100%;
+}
+
+/*--- Main page container ---*/
+.main-page {
+   float: left;
+   width: 100%;
+   padding: 20px;
+   height: 650px;
+}
+
+/* Instructions box */
+#left-box {
+   float: left;
+   width: 29%;
+   height: 550px;
+   padding: 20px;
+   background-color: lightblue;
+   line-height: 1.9;
+}
+/*
+#instruction-title {
+   
+}
+
+#steps {
+   
+}
+*/
+
+/* game play box */
+#right-box {
+   float: right;
+   width: 69%;
+   height: 550px;
+   padding: 20px;
+   text-align: center;
+   background-color: burlywood;
+   box-shadow: 2px 2px 5px black;
+}
+
+#gamePlay-title {
+   padding: 15px;
+}
+
+#numbers #game-number, #player-score{
+   display: inline-block;
+   width: 200px;
+   margin-top: 40px;
+   margin-bottom: 10px;
+}
+
+.crystalBox {
+   width: 100px;
+   height: 100px;
+   background-color: coral;
+   margin-top: 50px;
+}
+
+#results {
+   margin-top: 60px;
+   line-height: 2.0;
+}
+
+#reset {
+   margin-top: 50px;
+}
+
+#reset, button {
+   padding: 10px;
+}
+
+
+/* footer */
+footer {
+   clear: both;
+   width: 100%;
+   text-align: center;
+   padding: 15px;
+}

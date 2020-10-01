@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Crystals Collector</title>
+   <!-- link to the css -->
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <!-- link to the reset -->
+   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+   <!-- link to the jQuery Library -->
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+   <!-- The wrapper of the entire page -->
+   <div class="wrapper">
+
+      <!-- title -->
+      <header id="title"><h1>Crystals Collector</h1></header>
+
+      <!-- main page that holds the instructions and game board -->
+      <div class="main-page">
+
+         <!-- instructions -->
+         <div id="left-box">
+            <!-- instruction title -->
+            <header id="instruction-title"><h2>Instructions</h2></header>
+            <!-- instruction steps -->
+            <div id="steps">
+               <p>You will be given a random number at the start of the game.</p>
+               <p>There will be four crystals displayed on the screen. When you click on a crystal, it will add a specific amount of points to the player's total score.</p>
+               <p>The crystals hiden numbers will only be exposed until you click a crystal.</p>
+               <p>You win if the total score matches the random number you were given at the beginning of the game.</p>
+               <p>You will lose if your score goes above the given random number.</p>
+               <p>The game restarts whenever you win or loses.</p>
+               <p>When the game restarts again, you should see a new random number. Also, all the crystals will have four new hidden values. Of course, your score will reset to zero.</p>
+            </div>
+         </div>
+
+         <!-- game board -->
+         <div id="right-box">
+            <!-- game board title -->
+            <header id="gamePlay-title"><h2>Game Play</h2></header>
+            <!-- game numbers and scores -->
+            <div id="numbers">
+               <!-- computer's number -->
+               <div id="game-number"></div>
+               <!-- player's score -->
+               <div id="player-score">Score: <span id="score"></span></div>
+            </div>
+            
+            <!-- crystals images -->
+            <div id="crystals">
+               <img class="crystalBox crystal1"  src="assets/images/blueCrystal.jpg" alt="">
+               <img class="crystalBox crystal2"  src="assets/images/greenCrystal.jpg" alt="">
+               <img class="crystalBox crystal3"  src="assets/images/pinkCrystal.jpg" alt="">
+               <img class="crystalBox crystal4"  src="assets/images/purpleCrystal.jpg" alt="">
+            </div>
+
+            <!-- wins and losses -->
+            <div id="results">
+               <p>wins: <span id="wins"></span></p>
+               <p>Loses: <span id="loses"></span></p>
+            </div>
+            <!-- reset buttom -->
+            <div id="reset"><button>Reset</button></div>
+         </div>
+
+      </div>
+
+      <!-- footer -->
+      <footer>Copyright &copy; 2020 by Juan P. Munoz.</footer>
+
+   </div>
+
+
+   <script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
